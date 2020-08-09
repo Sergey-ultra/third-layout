@@ -5,244 +5,156 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>Макет</title>
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header" >
-    <div class="header__wrapper"id="home">
+<header class="header" id="home">
+    <div class="container">
+        <div class="company">
+            <div class="company__text">АдвисПлюс - Ваш надежный партнер в сфере строительства, проектирования и демонтажа</div>
+            <div class="company__phone"> <a href="tel:+88123333332">Телефон: 8(812)333-33-32</a></div>
+        </div>
         <nav class="header__navigation">
-            <div class="logo"><a href="#home">mycompany</a></div>
+            <div class="logo"><a href="#home"><img src="img/logo.svg" alt=""></a></div>
+            <div class="header__phone"> <a href="tel:+88123333332">Телефон: 8(812)333-33-32</a></div>
             <div class="burger-menu_button">
                 <div class="burger-menu_lines"></div>
             </div>
             <ul class="menu" id="menu">
-                <li class="menu__item active"><a href="#home">home</a></li>
-                <li class="menu__item"><a href="#about">about</a></li>
-                <li class="menu__item"><a href="#services">services</a></li>
-                <li class="menu__item"><a href="#portfolio">portfolio</a></li>
-                <li class="menu__item"><a href="#testimonials">testimonials</a></li>
-                <li class="menu__item"><a href="#contact">contacts</a></li>
+                <li class="menu__item active">
+                    <a href="#home">Главная</a>
+                </li>
+                <li class="menu__item sub">
+                    <a href="#services">Услуги</a>
+                    <div class="sub__icon"></div>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="#">СМР</a></li>
+                        <li class="submenu__item"><a href="#">Проектирование</a></li>
+                        <li class="submenu__item"><a href="#">Демонтаж</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#consalting">Консалтинг</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#lab">Лаборатория</a>
+                </li>
+                <li class="menu__item"><a href="#science">Научная деятельность</a></li>
+                <li class="menu__item"><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<section class="welcome">
-    <div class="welcome__wrapper">
-        <div class="container">
-            <div class="start__welcome">WELCOME ON <span>mycompany</span></div>
-            <div class="start__content">We are a digital agency with <span>years of experience</span> and with <span>extraordinary people</span>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="about__us" id="about">
-    <div class="about__us-wrapper">
-        <div class="about__us-item about__us-img">
-            <img src="img/main.jpg" alt="">
-        </div>
-        <div class="about__us-item about__us-content">
-            <div class="about__us-title">Some words <span>about us</span></div>
-            <div class="about__us-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem
-                maiores ullam quis, at asperiores minus ad eaque maxime possimus .
-            </div>
-            <ul class="about__us-list">
-                <li><span>Mission</span>- We deliver uniqueness and quality</li>
-                <li><span>Skills</span> - Delivering fast and excellent results</li>
-                <li><span>Clients</span> - Satisfied clients thanks to our experience</li>
-            </ul>
-        </div>
-    </div>
-</section>
-<section class="our__team">
-    <div class="our__team-wrapper">
-        <div class="container">
-            <div class="our__team-title">OUR TEAM</div>
-            <div class="our__team-content">
-                <div class="our__team-item">
-                    <div class="our__team-avatar"></div>
-                    <div class="our__team-name">Vlad Ivanov <p>Designer</p></div>
-                    <div class="our__team-description">Do not seek to change what has come before. Seek to create that
-                        which has not.
-                    </div>
+<section class="services">
+        <div class="services__container">
+            <div class="services__img">
+                <img src="img/services.png" alt="">
+                <div class="services__overlay"></div>
+                <div class="services__text">
+                    Проектирование
+                    <div class="services__more"><a href="#">Подробней</a></div>
                 </div>
-                <div class="our__team-item">
-                    <div class="our__team-avatar"></div>
-                    <div class="our__team-name">Bogdan Makarovspan <p>Manager</p></div>
 
-                    <div class="our__team-description">Do not seek to change what has come before. Seek to create that
-                        which has not.
-                    </div>
+            </div>
+            <div class="services__img">
+                <img src="img/services2.png" alt="">
+                <div class="services__overlay"></div>
+                <div class="services__text">Демонтаж
+                    <div class="services__more"><a href="#">Подробней</a></div>
                 </div>
-                <div class="our__team-item">
-                    <div class="our__team-avatar"></div>
-                    <div class="our__team-name">Pavel Konov <p>Copywriter</p></div>
-                    <div class="our__team-description">Do not seek to change what has come before. Seek to create that
-                        which has not.
-                    </div>
-                </div>
-                <div class="our__team-item">
-                    <div class="our__team-avatar"></div>
-                    <div class="our__team-name">Max Belov <p>SEO</p></div>
-                    <div class="our__team-description">Do not seek to change what has come before. Seek to create that
-                        which has not.
-                    </div>
+            </div>
+            <div class="services__img">
+                <img src="img/services3.png" alt="">
+                <div class="services__overlay"></div>
+                <div class="services__text">Строительно- монтажные работы
+                    <div class="services__more"><a href="#">Подробней</a></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="our__services" id="services">
+<section class="mission" id="mission">
     <div class="container">
-        <div class="our__services-title">OUR SERVICES</div>
-        <div class="our__services-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at
-            asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa
-            tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam
-            quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa
-            tenetur.
-        </div>
-        <div class="our__services-content">
-            <div class="our__services-item">
-                <div class="our__services-avatar">
-                    <img src="img/icon.png" alt="">
-                </div>
-                <div class="our__services-name">Web design</div>
-                <div class="our__services-name text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                </div>
+        <div class="mission__row">
+            <div class="mission__content">
+                <div class="mission__description">Наша миссия</div>
+                <div class="mission__title">АдвисПлюс <p>надёжный партнёр</p> </div>
+                <div class="mission__text">С другой стороны консультация с профессионалами из IT способствует повышению актуальности системы масштабного изменения ряда параметров. Разнообразный и богатый опыт постоянное информационно-техническое обеспечение нашей деятельности.
+                    <p> С другой стороны рамки и место обучения кадров обеспечивает актуальность дальнейших направлений развития проекта.</p> </div>
+                <a class="mission__more" href="#">Подробнее</a>
             </div>
-            <div class="our__services-item">
-                <div class="our__services-avatar">
-                    <img src="img/icon2.png" alt="">
-                </div>
-                <div class="our__services-name">Mobile apps</div>
-                <div class="our__services-name text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                </div>
+            <div class="mission__slider">
+                <div class="mission__item"><img src="img/mission.png" alt=""></div>
+                <div class="mission__item"><img src="img/mission.png" alt=""></div>
+                <div class="mission__item"><img src="img/mission.png" alt=""></div>
+                <div class="mission__item"><img src="img/mission.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-            </div>
-            <div class="our__services-item">
-                <div class="our__services-avatar">
-                    <img src="img/icon3.png" alt="">
+<section class="partners" id="partners">
+    <div class="container">
+        <div class="partners__row">
+            <div class="partners__title">Наши партнёры</div>
+            <div class="partners__slider">
+                <div class="slider__item">
+                    <a href="#"> <img src="img/slider.svg" alt=""></a>
                 </div>
-                <div class="our__services-name">PHOTOGRAPHY</div>
-                <div class="our__services-name text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
+                <div class="slider__item">
+                    <a href="#"> <img src="img/slider2.svg" alt=""></a>
+                 </div>
+                <div class="slider__item">
+                    <a href="#"> <img src="img/slider3.svg" alt=""></a>
                 </div>
-            </div>
-            <div class="our__services-item">
-                <div class="our__services-avatar">
-                    <img src="img/icon4.png" alt="">
+                <div class="slider__item">
+                    <a href="#"> <img src="img/slider4.svg" alt=""></a>
                 </div>
-                <div class="our__services-name">marketing</div>
-                <div class="our__services-name text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
+                <div class="slider__item">
+                    <a href="#"> <img src="img/slider5.svg" alt=""></a>
+                </div>
+                <div class="slider__item">
+                    <a href="#"> <img src="img/slider5.svg" alt=""></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="client">
-    <div class="client__wrapper">
-        <div class="container">
-            <div class="client__title">SOME OF OUR CLIENTS</div>
-            <div class="client__content">
-                <div class="client__item"><a href="#"><img src="img/client.png" alt=""></a></div>
-                <div class="client__item"><a href="#"><img src="img/client2.png" alt=""></a></div>
-                <div class="client__item"><a href="#"><img src="img/client3.png" alt=""></a></div>
-                <div class="client__item"><a href="#"><img src="img/client4.png" alt=""></a></div>
-                <div class="client__item"><a href="#"><img src="img/client5.png" alt=""></a></div>
+<footer class="footer" id="footer">
+    <div class="container">
+        <nav class="header__navigation">
+            <div class="logo"><a href="#home"><img src="img/logo.svg" alt=""></a></div>
+            <div class="burger-menu_button">
+                <div class="burger-menu_lines"></div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="our__work" id="portfolio">
-    <div class="our__work-wrapper">
-        <div class="container">
-            <div class="our__work-title">take a look at <span>our work</span></div>
-            <div class="our__work-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem
-                maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi
-                porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores
-                ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro
-                ipsa tenetur.
-            </div>
-            <div class="our__work-content">
-                <div class="our__work-item"><a href="#"><img src="img/our__work.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work2.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work2.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work2.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work2.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work3.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work3.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work3.png" alt=""></a></div>
-                <div class="our__work-item"><a href="#"><img src="img/our__work3.png" alt=""></a></div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="testimonials" id="testimonials">
-    <div class="testimonials__wrapper">
-        <div class="container">
-            <div class="testimonials-title"><span>our clients’ </span>testimonials</div>
-            <div class="testimonials-text">This book is a treatise on the theory of ethics, very popular during the
-                Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-                1.10.32.
-            </div>
-            <div class="testimonials-author"><span>Dean Martin,</span> CEO Acme Inc.</div>
-        </div>
-    </div>
-</section>
-<section class="contact" id="contact">
-    <div class="contact-wrapper">
-        <div class="container">
-            <div class="contact-title">contact us</div>
-            <div class="contact-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem
-                maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi
-                porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </div>
-            <form class="contact-form" name="newform">
-                <div class="contact-name">
-                    <label for="name"> Name <span>*</span></label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div class="contact-email">
-                    <label for="email_address"> Email<span>*</span></label>
-                    <input type="text" id="email_address" name="email_address">
-                </div>
-                <div class="contact-message">
-                    <label for="message">Message <span>*</span></label>
-                    <textarea type="text" id="message" name="message" ></textarea>
-                </div>
-                <button class="contact-btn">SEND</button>
-            </form>
-        </div>
-    </div>
-</section>
-<footer class="footer">
-    <div class="footer__wrapper">
-        <div class="container footer-container">
-            <div class="footer__icon"><a href="#"><img src="img/footer-icon.png" alt=""></a></div>
-            <div class="footer__icon"><a href="#"><img src="img/footer-icon2.png" alt=""></a></div>
-            <div class="footer__icon"><a href="#"><img src="img/footer-icon3.png" alt=""></a></div>
-            <div class="footer__icon"><a href="#"><img src="img/footer-icon4.png" alt=""></a></div>
-            <div class="footer__icon"><a href="#"><img src="img/footer-icon5.png" alt=""></a></div>
-
+            <ul class="menu" id="hj">
+                <li class="menu__item active"><a href="#home">Главная</a></li>
+                <li class="menu__item"><a href="#services">Услуги</a></li>
+                <li class="menu__item"><a href="#consalting">Консалтинг</a></li>
+                <li class="menu__item"><a href="#lab">Лаборатория</a></li>
+                <li class="menu__item"><a href="#science">Научная деятельность</a></li>
+                <li class="menu__item"><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="company">
+            <div class="company__text">АдвисПлюс - все права защищены.</div>
+            <div class="company__phone"> <a href="tel:+88123333332">Телефон: 8(812)333-33-32</a></div>
         </div>
     </div>
 </footer>
+<!--
 <div id="modal" class="modal">
     <form>
         <input type="text" placeholder="Ваше имя">
         <input type="text" placeholder="Ваш телефон">
         <input type="submit" value="Отправить">
     </form>
-</div>
+</div>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
